@@ -74,7 +74,7 @@ class Home extends React.Component {
     // Thanks to "connect", we're able to get specific selected data, through the props.
     var { frozen, time, reduxState } = this.props
     var attrs = {}
-    const DELAY = 500 // in ms
+    const DELAY = 2000 // in ms
 
     if (frozen) {
         attrs = {

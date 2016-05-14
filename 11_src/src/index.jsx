@@ -15,6 +15,7 @@ import Application from './application'
 // instantiation.
 const store = createStore()
 
+console.log("store initialized with state: ", store.getState())
 // Now, time to render our application to the DOM using ReactDOM.render (or just render thanks to
 // the ES6 notation: import { render } from 'react-dom')...
 render(

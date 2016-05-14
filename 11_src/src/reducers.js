@@ -38,3 +38,17 @@ export function _time(state = initialTimeState, action) {
       return state
   }
 }
+
+export function addItem(state = {}, action) {
+  console.log('_addItemReducer call with state ', state, ' and action ', action);
+
+  switch(action.type) {
+    case 'ADD_ITEM':
+      return [
+        ...state,
+        action.item
+      ]
+    default:
+      return state
+  }
+}
